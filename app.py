@@ -7,7 +7,7 @@ st.set_page_config(
     layout= "centered"
 )
 
-client = anthropic.Anthropic(api_key="sk-ant")
+client = anthropic.Anthropic(api_key=st.secrets["ANTHROPIC_API_KEY"])
 
 st.title("🚗 Autohaus Kießling")
 st.subheader("Ihr digitaler Berater – powered by KI")
